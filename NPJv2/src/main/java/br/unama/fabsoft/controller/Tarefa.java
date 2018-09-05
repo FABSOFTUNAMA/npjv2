@@ -1,4 +1,4 @@
-package com.fabsoftunama.npj;
+package br.unama.fabsoft.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
