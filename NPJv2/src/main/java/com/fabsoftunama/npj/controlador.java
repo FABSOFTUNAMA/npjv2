@@ -16,10 +16,7 @@ public class controlador extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		
-			String[] students = {"Adonias","Carlos"};
-			req.setAttribute("student_list", students);
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/views/cadastroPessoa.jsp");	
-			dispatcher.forward(req, resp);
-		
+			dispatcher.forward(req, resp);	
 	}
 }
