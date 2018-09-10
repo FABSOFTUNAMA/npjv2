@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,32 +13,30 @@
 <body>
 
 <div class="container"><br/>
+	<c:import url="../_comun/cabecalho.jsp"></c:import>
 	<form action="#" method="POST">
 	  <div class="form-group">
 	    <label for="nome">Nome</label>
-	    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Entre com o nome">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	    <input type="text" class="form-control" id="nome" placeholder="Entre com o nome">
 	  </div>
 	  <div class="form-group">
 	    <label for="cpf">CPF</label>
-	    <input type="text" class="form-control" id="cpf" placeholder="Entre com o cpf">
+	    <input type="text" class="col-sm-6 form-control" id="cpf" placeholder="Entre com o cpf">
 	  </div>
 	  <div class="form-group">
 	    <label for="cpf">CEP</label>
-	    <input type="text" class="form-control" id="cep" placeholder="Entre com o cpf">
+	    <input type="text" class="col-sm-6 form-control" id="cep" placeholder="Entre com o cpf">
 	  </div>
 	  <div class="form-group">
 	    <label for="logradouro">Logradouro</label>
-	    <input type="text" class="form-control" id="logradouro" aria-describedby="emailHelp" placeholder="Entre com oendereço">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	    <input type="text" class="form-control" id="logradouro" placeholder="Entre com oendereço">
 	  </div>
 	  <div class="form-group">
 	    <label for="numero">Numero</label>
-	    <input type="text" class="form-control" id="numero" aria-describedby="emailHelp" placeholder="Entre com número">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	    <input type="text" class="col-sm-5 form-control" id="numero" aria-describedby="emailHelp" placeholder="Entre com número">
 	    <label for="numero">Bairro</label>
 	    <select>
-	    	<option></option>
+	    	<option class="col-sm-5"></option>
 	    </select>
 	  </div>
 	  
@@ -53,11 +52,12 @@
 	  </div>
 	 
 	  <div class="form-group">
-	    <label for="email">Email</label>
-	    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entre com o email">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-	      <label for="telefone">Telefone</label>
-	  	  <input type="phone" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entre com o telefone">
+	  	<div class="form-row justify-content-between">
+		    <label for="email">Email</label>
+		    <input type="email" class="col-sm-5 form-control" id="email" aria-describedby="emailHelp" placeholder="Entre com o email">
+		    <label for="telefone">Telefone</label>
+		  	<input type="phone" class="col-sm-5 form-control" id="email" aria-describedby="emailHelp" placeholder="Entre com o telefone">
+	  	</div>
 	  </div>
 	  
 	  <div class="form-group form-check">
