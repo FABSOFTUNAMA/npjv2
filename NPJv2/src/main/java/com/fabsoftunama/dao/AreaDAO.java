@@ -9,6 +9,8 @@ import java.util.List;
 
 import org.postgresql.core.ConnectionFactory;
 
+import br.unama.fabsoft.bean.AreaBean;
+
 
 
 public class AreaDAO {
