@@ -7,14 +7,14 @@
   
     <dependencies>
     
-    <!-- PostgreSQL JDBC Driver 4.2 -->
+    	<!-- PostgreSQL JDBC Driver 4.2 -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.2.1</version>
 		</dependency>
   
-  <!-- JSTL-api 1.2 -->
+  		<!-- JSTL-api 1.2 -->
 		<dependency>
     		<groupId>org.glassfish.web</groupId>
     		<artifactId>javax.servlet.jsp.jstl</artifactId>
